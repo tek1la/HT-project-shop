@@ -290,4 +290,94 @@ body {
     font-weight: 700;
 }
 
+/* filter end */
+
 /* goods */
+
+.back-menu {
+    display: flex;
+    color: white;
+    margin: 30px 0;
+}
+
+.back-menu-item {
+    text-decoration: none;
+    color: white;
+}
+
+.back-menu p {
+    margin: 0 10px;
+}
+
+.title-sort-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+/* sort filter */
+
+.sort-filter {
+    height: 40px;
+    width: 270px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    line-height: 38px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.sort-filter-item, .hiden-sort-item {
+    font-size: 21px;
+    font-weight: 300;
+    color: white;
+}
+
+.hiden-sort-item, .sort-filter-item {
+    padding-left: 20px;
+}
+
+.sort-filter-arrow {
+    content: url(./img/arrow-right-white.svg);
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 15px
+}
+
+.sort-filter:hover .hiden-sort-filter {
+    display: block;
+}
+
+.sort-filter:hover .sort-filter-arrow {
+    content: url(./img/arrow-down.svg);
+}
+
+.hiden-sort-item:hover {
+    color: #2c71b8;
+    background-color: white;
+}
+
+.hiden-sort-filter {
+    display: none;
+    right: -1px;
+    width: 270px;
+    position: absolute;
+    top: 38px;
+    border: 1px solid white;
+}
+
+/* sort filter end */
+
+/* goods */
+
+.goods-block-wraper {
+    
+}
