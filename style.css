@@ -40,10 +40,21 @@ body {
     max-width: 25%;
 }
 
+.col-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
 }
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
 
 /* Header */
 
@@ -217,9 +228,66 @@ body {
 
 .slider-wraper {
     height: 400px;
+    display: none;
 }
 
 /* slider end */
 
-/* goods */
+/* filter */
 
+.filter {
+    padding: 30px;
+    color: white;
+    background-color: rgba(205, 231, 238, 0.20);
+    border-right: 1px solid white
+}
+
+.filter-type {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.filter .filter-type:first-child {
+    margin-top: 0;
+}
+
+.filter-input-item {
+    margin: 12.5px 0;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.filter-input-item label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.filter-title {
+    text-transform: uppercase;
+    margin-bottom: 12.5px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.show-options {
+    margin: 12.5px 0 30px 10px;
+}
+
+.show-options a {
+    text-decoration: none;
+    color: white;
+}
+
+.filter-btn {
+    width: 210px;
+    height: 50px;
+    border: 1px solid white ;
+    background-color: #2c71b8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/* goods */
