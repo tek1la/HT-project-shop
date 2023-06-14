@@ -41,8 +41,8 @@ body {
 }
 
 .col-4 {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
 }
 
 .col-6 {
@@ -50,11 +50,24 @@ body {
     max-width: 50%;
 }
 
+.col-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
 .col-9 {
     flex: 0 0 75%;
     max-width: 75%;
 }
 
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+sup {
+    vertical-align: super;
+}
 
 /* Header */
 
@@ -100,6 +113,7 @@ body {
 .hiden-menu-wraper {
     display: none;
     position: absolute;
+    z-index: 10;
     margin-left: -1px;
 }
 
@@ -297,7 +311,7 @@ body {
 .back-menu {
     display: flex;
     color: white;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .back-menu-item {
@@ -310,6 +324,7 @@ body {
 }
 
 .title-sort-wraper {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -324,13 +339,8 @@ body {
 /* sort filter */
 
 .sort-filter {
-    height: 40px;
-    width: 270px;
     border: 1px solid white;
-    display: flex;
-    flex-direction: column;
     line-height: 38px;
-    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -370,8 +380,10 @@ body {
     right: -1px;
     width: 270px;
     position: absolute;
+    z-index: 10;
     top: 38px;
     border: 1px solid white;
+    background-color: #2c71b8;
 }
 
 /* sort filter end */
@@ -379,5 +391,164 @@ body {
 /* goods */
 
 .goods-block-wraper {
-    
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
+
+.good-block {
+    border: 1px solid white;
+    margin-bottom: 30px;
+}
+
+.good-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    background: #cdddee;
+    position: relative;
+}
+
+.zoom {
+    background-image: url(img/zoom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid #2c71b8;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    background-image: url(img/hover-zoom.png);
+    background-color: #2c71b8;
+}
+
+.like:hover {
+    background-image: url(img/hover-like.png);
+    background-color: #2c71b8;
+}
+
+.like {
+    background-image: url(img/like.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid #2c71b8;
+    right: 10px;
+    top: 50px;
+    cursor: pointer;
+}
+
+.good-describe {
+    padding: 15px;
+    color: white;
+}
+
+.good-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.good-text {
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.good-options {
+    margin-bottom: 15px;
+}
+
+.good-options ul li:nth-child(2) {
+    margin: 20px 0;
+}
+
+.good-options span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.good-price {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.good-price sup {
+    font-size: 21px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    height: 50px;
+    width: 210px;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.good-btn {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.to-cart-btn {
+    margin-bottom: 30px;
+    border: none;
+    background-color: rgba(205, 221, 238, 0.3);
+}
+
+.to-cart-btn img{
+    margin-left: 5px;
+}
+
+.to-cart-btn:hover {
+    background-color: rgba(205, 221, 238, 0.5);
+}
+
+.more {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.more a{
+    font-size: 36px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+
+/* end goods */
+
+/* footer */
+
+.footer {
+    height: 100px;
+    background-color: rgba(205, 221, 238, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    color: #2c71b8;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/* end footer */
