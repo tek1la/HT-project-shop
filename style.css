@@ -272,6 +272,30 @@ sup {
     font-weight: 300;
 }
 
+.filter-input-item input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.filter-input-item input+label::before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+.filter-input-item input+label:hover::before {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.filter-input-item input:checked+label::before {
+    background-color: white;
+}
+
 .filter-input-item label {
     margin-left: 10px;
     cursor: pointer;
@@ -294,14 +318,7 @@ sup {
 }
 
 .filter-btn {
-    width: 210px;
-    height: 50px;
-    border: 1px solid white ;
     background-color: #2c71b8;
-    color: white;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: 700;
 }
 
 /* filter end */
